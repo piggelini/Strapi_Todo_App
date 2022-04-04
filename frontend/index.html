@@ -10,13 +10,23 @@
 
 <body>
 
+    <strong>Is not logged in!</strong>
+    <label for="user">Email/Username</label>
+    <input type="text" id="user">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <button onclick="login()">Login</button>
+
     <label for="title">Title</label>
     <input type="text" id="todo-title">
     <label for="descrip">Description</label>
     <input type="text" id="todo-descrip">
-    <button onclick="addTodo()"></button>
+    <button onclick="addTodo()">Add todo</button>
 
     <div id="todos-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+        integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 </body>
 
